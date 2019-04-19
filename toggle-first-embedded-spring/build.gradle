@@ -8,11 +8,14 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 repositories {
 	mavenLocal()
 	jcenter()
+	maven {
+		url = 'https://oss.sonatype.org/service/local/repositories/releases/content'
+	}
 }
 
 dependencies {
 
-	implementation 'com.mageddo.togglefirst:toggle-first-core:1.4.4'
+	implementation 'com.mageddo.togglefirst:toggle-first-core:1.4.8'
 	implementation 'org.springframework.boot:spring-boot-starter:2.1.4.RELEASE'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.4.RELEASE'
